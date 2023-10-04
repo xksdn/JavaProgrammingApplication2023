@@ -51,6 +51,7 @@ public class PokemonGame {
 //                player.attack(enemy, player.skills[skillMenu - 1]);
                 skillMenu = scanner.nextInt();
                 player.attack(enemy, skillMenu);
+                enemy.attack(player, (int)(Math.random() * 3) + 1);
             }else if(menu == 2){
 
             }else{
