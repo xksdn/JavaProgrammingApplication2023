@@ -1,26 +1,22 @@
 package generic;
-
-
-import Pokemonster.*;
-
+import Pokemonster.Pokemon;
 import java.util.ArrayList;
-import java.util.List;  // built in
-
+import java.util.List;
 public class ListDemo02 {
     public static void main(String[] args) {
         List<String> skills = new ArrayList<>();
-        List<Integer> sqecialAttackRate = new ArrayList<>();
-
+        List<Integer> specialAttackRate = new ArrayList<>();
         skills.add("화염방사");
-        skills.add("용의 숨결");
+        skills.add("용의숨결");
         skills.add("할퀴기");
-        sqecialAttackRate.add(90);
-        sqecialAttackRate.add(60);
-        sqecialAttackRate.add(40);
+        specialAttackRate.add(90);
+        specialAttackRate.add(60);
+        specialAttackRate.add(40);
+        System.out.println(skills.get(1) + " / " + specialAttackRate.get(1));
 
         for(String skill : skills)
             System.out.println(skill);
-        for (Integer Rate : sqecialAttackRate)
-            System.out.println(Rate);
+        for (Integer rate : specialAttackRate)
+            System.out.println(rate);
     }
 }
