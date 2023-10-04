@@ -1,4 +1,6 @@
-//public final class Pokemon {
+package Pokemonster;
+
+//public final class Pokemonster.Pokemon {
 public abstract class Pokemon {
     //private int level;
     protected int level;
@@ -6,7 +8,7 @@ public abstract class Pokemon {
     protected String name;
     protected int attackRate;
     protected int defenceRate;
-    protected String [] skills;  // 3가지 skill 추가 예정
+    protected String [] skills;
     protected int [] specialAttackRate;
     private static int pokemonCount = 0;  // 클래스(정적) 변수
 
