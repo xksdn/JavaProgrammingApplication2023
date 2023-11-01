@@ -1,4 +1,4 @@
-package Pokemonster;
+package fly;
 
 public class NoFly implements Flyable{
     @Override

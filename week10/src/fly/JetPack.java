@@ -1,4 +1,4 @@
-package Pokemonster;
+package fly;
 
 public class JetPack implements Flyable{
     @Override

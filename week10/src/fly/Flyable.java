@@ -1,7 +1,7 @@
-package Pokemonster;
+package fly;
 
 public interface Flyable {
-//    public Pokemonster.Flyable(){
+//    public fly.Flyable(){
 //
 //    }
 
