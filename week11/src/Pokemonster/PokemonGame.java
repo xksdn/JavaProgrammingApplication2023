@@ -64,6 +64,7 @@ public class PokemonGame {
                 }else if(menu == 3){
 //                    System.out.println("힐링 포션을 마십니다. 채력이 30hp 증가합니다.");
 //                    Function<Integer, Integer> healPotion = hp -> hp + 30;
+////                    UnaryOperator<Integer> healPotion = hp -> hp + 30;
 ////                    int newHp = healPotion.apply(player.getHp());
 ////                    player.setHp(newHp);
 //                    player.setHp(healPotion.apply(player.getHp()));
