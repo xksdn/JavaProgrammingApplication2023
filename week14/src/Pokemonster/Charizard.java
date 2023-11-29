@@ -3,22 +3,22 @@ package Pokemonster;
 import fly.Flyable;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Charizard extends Pokemon{
     public Charizard(Flyable f) {
         System.out.println("자몽자몽~");
         this.level = 36;
-        //this.attackRate = 84; // 2단계 진화 포캣몬스터의 경우 최대 공격력과 최소 공격력의 차를 10으로 두고 랜덤 추출
-        this.attackRate = (int)(Math.random() * 11) + 74;   // 74 ~ 84
+        //this.attackRate = 84;  // 2단계 진화 포켓몬스터의 경우 최대 공격력과 최소 공격력의 차를 10으로 두고 랜덤 추출
+        this.attackRate = (int)(Math.random() * 11) + 74;  // 74 ~ 84
         this.defenceRate = 78;
 //      this.setLevel(36);
         this.setHp(78);
         this.name = "리자몽";
         this.flyable = f; // Association, has-a (Aggregation)
-//        this.skills = new String[]{"화염 방사", "용의 숨결", "할퀴기"};
+//        this.skills = new String[]{"화염방사", "용의숨결", "할퀴기"};
 //        this.specialAttackRate = new int[]{90, 60, 40};
+
 //        this.skills = new ArrayList<>();
 //        this.skills.add("화염방사");
 //        this.skills.add("용의숨결");
@@ -28,17 +28,15 @@ public class Charizard extends Pokemon{
 //        this.specialAttackRate.add(90);
 //        this.specialAttackRate.add(60);
 //        this.specialAttackRate.add(40);
-//        this.skills = new ArrayList<>(Arrays.asList("화염방사", "용의숨결", "할퀴기"));
-//        this.specialAttackRate = new ArrayList<>(Arrays.asList(90, 60, 40));
 
         this.skills = new HashMap<>();
-        this.skills.put(1, "화염 방사");
-        this.skills.put(2, "용의 숨결");
+        this.skills.put(1, "화염방사");
+        this.skills.put(2, "용의숨결");
         this.skills.put(3, "할퀴기");
 
         this.specialAttackRate = new HashMap<>();
         this.specialAttackRate.put("화염방사", 90);
-        this.specialAttackRate.put("용의 숨결", 60);
+        this.specialAttackRate.put("용의숨결", 60);
         this.specialAttackRate.put("할퀴기", 40);
     }
 
